@@ -30,11 +30,61 @@ p {
   padding: 0;
   font-weight: 400;
 }
-
 .container {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
+}
+.logo {
+  font-size: 30px;
+  font-weight: 500;
+  display: flex;
+}
+button {
+  margin-top: 20px;
+  padding: 0 25px;
+  cursor: pointer;
+  border: none;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0 25px;
+  line-height: 40px;
+  border: 1px solid #000;
+  font-weight: 500;
+  transition: 0.3s ease all;
+}
+.btn-sm {
+  line-height: 33px;
+}
+.btn-lg {
+  line-height: 45px;
+}
+.btn-primary {
+  background-color: #000;
+  color: #fff;
+}
+.btn-primary:hover {
+  background-color: #fff;
+  color: #000;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+  outline: none;
+  border: 1px solid #dee0ea;
+  padding: 8px 8px 8px 15px;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus {
+  border-color: gray;
+}
+input[type="number"]::-webkit-inner-spin-button {
+  opacity: 1;
 }
 
 /* base end */
@@ -70,12 +120,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.header-left .logo {
-  font-size: 30px;
-  font-weight: 500;
-  display: flex;
 }
 
 .header-center .navigation .menu-list {
@@ -203,13 +247,34 @@ header .menu-dropdown-content a:hover {
   width: 100%;
   display: flex;
   justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
 }
+
 .megamenu-wrapper {
   position: static !important;
 }
+
+.header-center .menu-list .menu-list-item.megamenu-wrapper:hover .menu-dropdown-wrapper {
+  opacity: 1;
+  visibility: visible;
+}
+
 .megamenu-wrapper .megamenu-links {
   display: flex;
   column-gap: 50px;
+}
+.megamenu-wrapper .megamenu-links a {
+  display: flex;
+  padding: 4px 30px;
+  font-size: 14px;
+  transition: 0.3s ease;
+  color: #343a40;
+}
+.megamenu-wrapper .megamenu-links a:hover {
+  color: #f8f9fa;
+  background-color: #343a40;
 }
 .megamenu-wrapper .megamenu-products-title {
   font-size: 16px;
@@ -224,17 +289,17 @@ header .menu-dropdown-content a:hover {
 .megamenu-wrapper .megamenu-list {
   font-size: 14px;
 }
-.megamenu-wrapper .megamenu-single-title{
- font-size: 18px;
- font-weight: 500;
+.megamenu-wrapper .megamenu-single-title {
+  font-size: 18px;
+  font-weight: 500;
 }
-.megamenu-wrapper .megamenu-single-subtitle{
- font-size: 14px;
-margin-bottom: 10px;
-font-weight: 400;
+.megamenu-wrapper .megamenu-single-subtitle {
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-weight: 400;
 }
-.megamenu-wrapper .megamenu-single-button{
- margin-top: 5px;
+.megamenu-wrapper .megamenu-single-button {
+  margin-top: 5px;
 }
 /*? menu dropdown end */
 
