@@ -41,8 +41,6 @@ p {
   display: flex;
 }
 button {
-  margin-top: 20px;
-  padding: 0 25px;
   cursor: pointer;
   border: none;
 }
@@ -110,7 +108,7 @@ header {
   color: #fff;
 }
 .header-row {
-  height: 70px;
+  height: 60px;
   display: flex;
   align-items: center;
   border-bottom: 1px solid #dee0ea;
@@ -300,7 +298,13 @@ header .menu-dropdown-content a:hover {
 }
 .megamenu-wrapper .megamenu-single-button {
   margin-top: 5px;
+
 }
 /*? menu dropdown end */
 
 /*! header end */
+
+/* modal search start */
+
+
+/* modal search end */
