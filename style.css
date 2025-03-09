@@ -100,6 +100,7 @@ header {
   color: #fff;
   letter-spacing: 1.2px;
   text-transform: uppercase;
+  width: 100%;
 }
 .global-notification a {
   font-weight: 600;
@@ -115,6 +116,14 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.header-mobile {
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+}
+.header-center .bi-x-circle {
+  display: none;
 }
 
 .header-center .navigation .menu-list {
@@ -264,14 +273,14 @@ header .menu-dropdown-content a:hover {
   row-gap: 2px;
 }
 .megamenu-wrapper .megamenu-menu-list a {
- display: flex;
+  display: flex;
   padding: 4px 30px;
   font-size: 14px;
   transition: 0.3s ease;
   color: #343a40;
 }
 .megamenu-wrapper .megamenu-menu-list li a {
-padding: 4px 30px;
+  padding: 4px 30px;
 }
 .megamenu-wrapper .megamenu-menu-list li:hover a {
   color: #f8f9fa;
@@ -305,7 +314,6 @@ padding: 4px 30px;
   justify-content: center;
   align-items: center;
   visibility: hidden;
-  
 }
 .modal-search::after {
   content: "";
@@ -427,16 +435,79 @@ padding: 4px 30px;
 
 @media (max-width: 1200px) {
   .container {
-   max-width: 992px;
- }
+    max-width: 992px;
+  }
 }
 @media (max-width: 992px) {
- .container {
-  max-width: 768px;
-}
+  .container {
+    max-width: 768px;
+  }
 }
 @media (max-width: 768px) {
- .container {
-  max-width: 576px;
+  .container {
+    max-width: 576px;
+  }
 }
+@media (max-width: 576px) {
+  .container {
+    max-width: 400px;
+  }
 }
+@media (max-width: 420px) {
+  .container {
+    max-width: 350px;
+  }
+}
+
+/*! header responsive */
+@media (max-width: 650px) {
+ .header-center {
+   position: fixed;
+   top: 0;
+   left: -100%;
+   height: 100vh;
+   background-color: #fff;
+   border-right: 1px solid #dee0ea;
+ }
+
+ .header-center .bi-x-circle {
+   display: inline-block;
+   position: absolute;
+   top: 15px;
+   right: 15px;
+   font-size: 20px;
+   cursor: pointer;
+ }
+
+ .header-center .menu-list {
+   flex-direction: column;
+   padding: 50px 75px;
+ }
+
+ .header-mobile {
+   display: inline-block;
+ }
+
+ header .menu-dropdown-wrapper{
+   display: none !important;
+ }
+
+ header .menu-list i {
+   display: none;
+ }
+ header .menu-list-item a {
+   font-size: 16px !important;
+ }
+}
+
+
+/*! search responsive  */
+
+@media (max-width: 992px){
+ .modal-search .modal-wrapper{
+   max-width: 370px;
+ }
+   .modal-search .results{
+     grid-template-columns: 1fr;
+   }
+} 
