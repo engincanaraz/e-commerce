@@ -264,7 +264,18 @@ header .menu-dropdown-content a:hover {
   row-gap: 2px;
 }
 .megamenu-wrapper .megamenu-menu-list a {
+ display: flex;
+  padding: 4px 30px;
   font-size: 14px;
+  transition: 0.3s ease;
+  color: #343a40;
+}
+.megamenu-wrapper .megamenu-menu-list li a {
+padding: 4px 30px;
+}
+.megamenu-wrapper .megamenu-menu-list li:hover a {
+  color: #f8f9fa;
+  background-color: #343a40;
 }
 .megamenu-wrapper .megamenu-single-title {
   font-size: 14px;
@@ -293,6 +304,8 @@ header .menu-dropdown-content a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  visibility: hidden;
+  
 }
 .modal-search::after {
   content: "";
@@ -411,3 +424,19 @@ header .menu-dropdown-content a:hover {
 }
 
 /* modal search end */
+
+@media (max-width: 1200px) {
+  .container {
+   max-width: 992px;
+ }
+}
+@media (max-width: 992px) {
+ .container {
+  max-width: 768px;
+}
+}
+@media (max-width: 768px) {
+ .container {
+  max-width: 576px;
+}
+}
