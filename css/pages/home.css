@@ -17,6 +17,17 @@
  margin-top: 30px;
  flex-wrap: wrap;
 }
-
-
 /* Category end */
+
+/* Products start */
+
+.products{
+ margin-bottom: 40px;
+}
+.products .product-list{
+ display: flex;
+flex-wrap: wrap;
+ gap: 10px;
+}
+
+/* Products end */
