@@ -53,31 +53,69 @@
 /* Blogs end */
 
 /* Brand start */
-.brands{
-  margin: 40px 0 ; 
+.brands {
+  margin: 40px 0;
 }
-.brand-list{
+.brand-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   border: 1px solid #dee0ea;
   padding: 30px 5px;
 }
-.brand-list .brand-item{
+.brand-list .brand-item {
   opacity: 0.4;
 }
-.brand-list .brand-item:hover{
+.brand-list .brand-item:hover {
   opacity: 1;
   transition: all ease 0.3s;
 }
 
 /* Brand end */
 
+/* Policy start */
+.policy {
+  border: 1px solid #dee0ea;
+  margin-top: 40px;
+}
+.policy .policy-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 0;
+  flex-wrap: wrap;
+}
+.policy .policy-list .policy-item {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+.policy .policy-item i {
+  font-size: 50px;
+  display: flex;
+}
+.policy .policy-item .policy-text {
+  display: flex;
+  flex-direction: column;
+}
+.policy .policy-item .policy-text  strong {
+font-weight: 600;;
+}
+.policy .policy-item .policy-text span {
+font-size: 14px;
+}
+
+
+
+/* Policy end */
 
 /*! Responsive Design Start */
 @media (max-width: 768px) {
   .blogs .blog-list {
     grid-template-columns: 1fr;
+  }
+  .policy .policy-list{
+    flex-direction: column;
+    
   }
 }
 
