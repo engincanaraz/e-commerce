@@ -8,36 +8,77 @@
   font-weight: 600;
 }
 /* Category start */
-.categories{
- margin: 40px 0;
+.categories {
+  margin: 40px 0;
 }
-.categories .category-list{
- display: flex;
- gap: 30px;
- margin-top: 30px;
- flex-wrap: wrap;
+.categories .category-list {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+  flex-wrap: wrap;
 }
 /* Category end */
 
 /* Products start */
 
-.products{
- margin-bottom: 40px;
+.products {
+  margin-bottom: 40px;
 }
-.products .product-list{
- display: flex;
-flex-wrap: wrap;
- gap: 10px;
+.products .product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 /* Products end */
 
 /* Campaigns start */
-.campaigns .campaigns-wrapper{
-display: flex;
-gap: 30px;
-margin-top: 30px;
-flex-wrap: wrap;
-
+.campaigns .campaigns-wrapper {
+  display: flex;
+  gap: 30px;
+  margin: 30px;
+  flex-wrap: wrap;
 }
 /* Campaigns end */
+
+/* Blogs start */
+.blogs {
+  margin-bottom: 30px;
+}
+.blogs .blog-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+/* Blogs end */
+
+/* Brand start */
+.brands{
+  margin: 40px 0 ; 
+}
+.brand-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border: 1px solid #dee0ea;
+  padding: 30px 5px;
+}
+.brand-list .brand-item{
+  opacity: 0.4;
+}
+.brand-list .brand-item:hover{
+  opacity: 1;
+  transition: all ease 0.3s;
+}
+
+/* Brand end */
+
+
+/*! Responsive Design Start */
+@media (max-width: 768px) {
+  .blogs .blog-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*! Responsive Design End */
