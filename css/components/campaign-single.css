@@ -1,0 +1,34 @@
+.campaign-single {
+  background-image: url(../../img/single-campaign.png);
+  padding: 140px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.campaign-single .campaign-wrapper {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.campaign-single .campaign-wrapper h2 {
+  font-size: 25px;
+}
+.campaign-single .campaign-wrapper strong {
+  font-size: 55px;
+  font-weight: 600;
+  margin: 20px 0px;
+}
+.campaign-single .campaign-wrapper span {
+  display: inline-block;
+  width: 50px;
+  height: 5px;
+  background-color: #fff;
+}
+.campaign-single .campaign-wrapper > a {
+  margin-top: 60px;
+}
